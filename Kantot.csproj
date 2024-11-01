@@ -1,0 +1,103 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+	<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <Nullable>disable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\images\izinistekleri.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\images\izinlergecmisi.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\images\productadd.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\images\productupdate.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\images\productstockupdate.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\images\productdelete.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\images\editprice.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\images\quantity.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\images\deleterow.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\images\mainmenu.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\images\stockcontrol.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\images\returntodesktop.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\images\exit.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\images\sales2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\images\sales1.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
